@@ -4,7 +4,7 @@
 
 Caso queira me conhecer melhor, abaixo está o meu linkedin:
 
-[Linkedin](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
+- [Linkedin](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
 
 
 
