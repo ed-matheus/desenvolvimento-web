@@ -15,7 +15,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(29, 29, 29);
     margin: 0;
     padding: 0;
     display: flex;
@@ -55,18 +55,18 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #575757;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(223, 89, 0);
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
 }
 
-.instagram-logo {
-    height: 3rem;
+.anime-logo {
+    height: 6rem;
 }
 
 .profile-photo {
@@ -78,23 +78,24 @@ body {
 }
 
 .instagram-login {
-    background-color: #0095f6;
+    background-color: rgb(223, 89, 0);
     color: white;
     padding: 8px;
     border-radius: 4px;
 }
 
 .instagram.logout {
-    color: #0095f6;
+    background-color: white;
+    color: rgb(223, 89, 0);
     margin-top: 1rem;
 }
 
 .not-account {
-    color: rgb(160, 160, 160);
+    color: rgb(180, 180, 180);
 }
 
 .link-blue {
-    color: #0095f6;
+    color: rgb(223, 89, 0);
 }
 
 .get-the-app {
@@ -103,7 +104,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.3rem 0; 
+    padding: 1.3rem 0;
+    color: white; 
 }
 
 .download {
