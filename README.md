@@ -4,7 +4,7 @@ Aqui você poderá encontrar meus trabalhos de Desenvolvimento Web, desde meu pr
 
 ### Para me conhecer melhor:
 
-<img src="Linkedin-Logo.png" width="125" align="left"/><br><br>
+<img src="Linkedin-Logo.png" width="125" align="left"/><br>
 
  #### <br>
 
