@@ -4,7 +4,7 @@ Aqui você poderá encontrar meus trabalhos de Desenvolvimento Web, desde meu pr
 
 ### Para me conhecer melhor:
 
-<img src="https://logosmarcas.net/wp-content/uploads/2020/04/Linkedin-Logo.png" href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/" width="125" align="left"/><br>
+<img src=".git/linkedin-logo.png" href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/" width="125" align="left"/><br>
 
  #### <br>
 
