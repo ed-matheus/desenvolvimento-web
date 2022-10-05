@@ -6,7 +6,7 @@ Aqui você poderá encontrar meus trabalhos de Desenvolvimento Web, desde meu pr
 
 <img src="Linkedin-Logo.png" width="125" align="left"/><br>
 
- #### <br>:rocket: It´s Adventure Time! :rocket:
+ #### <br><p align="left">:rocket: It´s Adventure Time! :rocket:</p>
 
 
 
