@@ -4,9 +4,11 @@ Aqui você poderá encontrar meus trabalhos de Desenvolvimento Web, desde meu pr
 
 ### Para me conhecer melhor:
 
-<img src="Linkedin-Logo.png" width="125" align="left"/><br>
+<img src="Linkedin-Logo.png" width="125" align="left"/><br><br>
 
- #### <br><p align="left">:rocket: It´s Adventure Time! :rocket:</p>
+ #### <br>
+
+ #### <p align="center">:rocket: It´s Adventure Time! :rocket:</p>
 
 
 
