@@ -4,7 +4,7 @@ Aqui você poderá encontrar meus trabalhos de Desenvolvimento Web, desde meu pr
 
 ### Para me conhecer melhor:
 
-- ##### [LinkedIn](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
+- #### [LinkedIn](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
 
  #### :rocket: It´s Adventure Time! :rocket:
 
