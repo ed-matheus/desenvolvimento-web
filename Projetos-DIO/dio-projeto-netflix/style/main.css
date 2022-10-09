@@ -13,7 +13,7 @@
 
 body{
     background: var(--cor1);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Verdana", Times, serif;
     color: white;
 }
 
@@ -59,7 +59,7 @@ header nav a:hover{
 
 .anime-principal .descricao{
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
 }
 
 .anime-principal .titulo{
@@ -87,7 +87,6 @@ header nav a:hover{
 }
 
 .botao i{
-    display: flex;
     margin-right: 8px;
 }
 
@@ -105,4 +104,8 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrossel-animes{
+    margin-top: 5px;
 }
