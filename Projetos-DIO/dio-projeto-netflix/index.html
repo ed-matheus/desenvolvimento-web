@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>OTAKUFLIX</title>
 </head>
 <body>
@@ -29,15 +34,31 @@
                 ele ganha um Quirk e resolve entrar na melhor universidade de heróis do mundo.</p>
                 <div class="botoes">
                     <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
                     </button>
                     <button role="button" class="botao">
+                        <i class="fa-solid fa-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="carrossel-animes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-anime" src="img/capa-myhero.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Linkando HTML com o arquivo js da FontAwesome -->
+    <script src="https://kit.fontawesome.com/bae625948b.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
 
 </body>
 </html>
