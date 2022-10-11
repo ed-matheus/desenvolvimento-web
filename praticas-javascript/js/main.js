@@ -46,3 +46,4 @@ function load(){
 function change(elemento){
     console.log(elemento.value)
 }
+
