@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #d8d6cf;
+}
+
+body{
+    background-color: #34353c;
+}
+
+/* ícone e título */
+
+.incognito{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    color: #d8d6cf;
+    align-items: center;
+}
+
+.icon{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 1rem;
+}
+
+/* primeiro parágrafo */
+
+.first-text{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    font-size: small;
+}
+
+.learn-more{
+    cursor: pointer;
+    color: #5a98ef;
+}
+
+/* listas */
+
+.lists{
+    border: 1px solid blueviolet;
+    display: flex;
+    margin-top: 23px;
+}
+
+/* lista da esquerda */
+
+.left-list{
+    border: 1px solid red;
+    flex-direction: column;
+    /* margin-left: -268px; */
+}
+
+.left-list .list1{
+    margin-left: 18px;
+}
+
+/* lista da direita */
+
+.right-list{
+    border: 1px solid orange;
+    flex-direction: column;
+}
+
+.right-list .list2{
+    margin-left: 18px;
+}
+
