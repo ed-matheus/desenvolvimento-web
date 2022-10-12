@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- arquivo CSS com as configuraçãos do slider -->
+    <link rel="stylesheet" href="style/slider.css">
     <title>Incognito Tab - Clone</title>
 </head>
 <body>
     <main>
         <div class="incognito">
             <img class="icon" src="img/spy-icon.png" alt="ícone do espião">
-            <h2>You’ve gone Incognito</h2>
+            <p class="main-sentence">You’ve gone Incognito<p>
         </div>
     </main>
 
-    <content class="content">
-        <div class="first-text">
+    <content>
+        <div class="content">
             <p>Now you can browse privately, and other people who use this device won’t see your activity.<br>
             However, downloads, bookmarks and reading list items will be saved. <span class="learn-more">Learn More</span>
             </p>
@@ -39,7 +42,19 @@
                     </ul>
                 </div>
             </div>
-            <!-- finaliza listas aqui -->
+
+            <!-- bloqueio de cookies -->
+            <div class="cookies">
+                <p>Block third-party cookies</p>
+                <p>When on, sites can't use cookies that track you across the web. 
+                Features on some sites may break.</p>
+                <div class="check">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
         </div>
     </content>
 </body>

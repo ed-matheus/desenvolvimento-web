@@ -2,38 +2,39 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Helvetica;
-    color: #d8d6cf;
+    font-family: Helvetica, Verdana, sans-serif;
+    line-height: 20px;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #34353c;
+    color: #d8d6cf;
 }
 
 /* ícone e título */
-
 .incognito{
     /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    color: #d8d6cf;
     align-items: center;
+    font-size: x-large;
 }
 
 .icon{
-    height: 130px;
-    width: 130px;
-    margin-bottom: 1rem;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 32px;
 }
 
 /* primeiro parágrafo */
-
-.first-text{
-    border: 1px solid green;
+.content{
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 32px;
     align-items: center;
     font-size: small;
 }
@@ -46,17 +47,16 @@ body{
 /* listas */
 
 .lists{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     display: flex;
     margin-top: 23px;
 }
 
 /* lista da esquerda */
-
 .left-list{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-direction: column;
-    /* margin-left: -268px; */
+    margin-right: 62px;
 }
 
 .left-list .list1{
@@ -64,9 +64,8 @@ body{
 }
 
 /* lista da direita */
-
 .right-list{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     flex-direction: column;
 }
 
@@ -74,3 +73,9 @@ body{
     margin-left: 18px;
 }
 
+.cookies{
+    margin-top: 32px;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #3c4043;
+}
