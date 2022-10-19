@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: verdana, Helvetica, sans-serif;
+}
+
+/* topo da página / menu */
+header .container {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+}
+
+/* estilização e espaçamento do menu */
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    margin-right: 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header .container i {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+header .profile {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
