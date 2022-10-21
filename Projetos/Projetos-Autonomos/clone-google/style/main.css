@@ -2,10 +2,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: verdana, Helvetica, sans-serif;
 }
 
-/* topo da página / menu */
+/* TOPO DA PÁGINA / MENU */
 header .container {
     display: flex;
     padding: 16px;
@@ -16,10 +15,11 @@ header .container {
 
 /* estilização e espaçamento do menu */
 header a {
-    text-decoration: none;
-    color: black;
-    font-size: small;
     margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+    font-family: verdana, Helvetica, sans-serif;
 }
 
 header a:hover {
@@ -31,8 +31,98 @@ header .container i {
     margin-right: 20px;
 }
 
+header .container i:hover {
+    margin-left: 25px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
 header .profile {
     width: 34px;
     height: 34px;
     border-radius: 50%;
+}
+
+/* ÁREA DE PESQUISA / PRINCIPAL */
+
+/* logo */
+main .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* caixa de pesquisa */
+.container-search{
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid #dedede;
+    border-radius: 50px;
+
+    margin-top: 30px;
+    margin-right: 230px;
+    margin-left: 230px;
+    padding: 15px;
+}
+
+.search{
+    display: flex;
+    align-items: flex-start;
+    margin-left: -310px;
+}
+
+/* para deixar a borda do input invisível */
+.input{
+    border: none;
+    margin-left: 20px;
+}
+
+/* para retirar a borda que se forma ao clicar no input */
+.input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* botoes */
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.botoes{
+    cursor: pointer;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    font-size: 15px;
+    color: #474747;
+    background-color: #f8f9fa;
+}
+
+/* assinatura */
+.marca {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Courier, monospace, verdana;
+    margin-top: 220px;
+    margin-right: 5px;
 }
