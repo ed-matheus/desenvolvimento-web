@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style/main.css">
     <title>Google - Clone</title>
 </head>
-<body>
-    
+<body id="tudo">
     <!-- cabeçalho / menu -->
     <header>
+        <button type="button" id="botao-dark" onclick="clicou()">
+            <i class="fa-solid fa-moon"></i>
+        </button>
         <div class="container">
             <nav>
                 <a href="#">Moonmail</a>
@@ -19,7 +21,7 @@
             <!-- inserção do ícone -->
             <i class="fa-solid fa-bars"></i>
             <!-- imagem do perfil -->
-            <img src="img/profile-photo.png" alt="imagem de perfil da conta" class="profile">
+            <img src="img/profile-photo.png" alt="imagem de perfil da conta" class="profile">   
         </div>
     </header>
 
@@ -39,26 +41,48 @@
             <div class="search">
                 <label>
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                    <input class="input" type="text"/>
+                    <input class="input" type="text" size="60"/>
                 </label>
             </div>
         </div>
 
         <!-- botões abaixo da caixa de busca -->
-        <div class="botao">
-            <button class="botoes">Pesquisa Moongle</button>
-            <button class="botoes">Estou sortudo</button>
+        <div class="botoes">
+            <button class="botao">Pesquisa Moongle</button>
+            <button class="botao">Estou sortudo</button>
         </div>
 
     </main>
 
     <footer>
-        <footer class="marca">
-            developed by Ed Matheus
-        </footer>
+
+        <!-- rodapé da página -->
+        <div class="container-footer">
+            <div class="marca">
+                developed by Ed Matheus
+            </div>
+            <div class="footer-servidor">
+                <div class="formatacao">Brasil</div>
+            </div>
+            <hr>
+            <div class="footer-menu">
+                <div class="menu formatacao">
+                    <span>Sobre</span>
+                    <span>Publicidade</span>
+                    <span class="unique-format">Como funciona a Pesquisa</span>
+                </div>
+                <div class="right-text menu formatacao">
+                    <span>Privacidade</span>
+                    <span>Termos</span>
+                    <span>Configurações</span>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- chamando o kit de ícones do Font Awesome -->
     <script src="https://kit.fontawesome.com/89d4f401d9.js" crossorigin="anonymous"></script>
+    <!-- linkando com o arquivo dark-mode.js -->
+    <script src="js/dark-mode.js"></script>
 </body>
 </html>

@@ -1,46 +1,76 @@
+/* declarando as variáveis */
+:root{
+    --cor-nav: #000;
+    --cor-sombras: #d1d1d1;
+    --boxes: #ededed;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-/* TOPO DA PÁGINA / MENU */
-header .container {
-    display: flex;
-    padding: 16px;
+body{
+    background-color: #fafafa;
+}
+
+/* BOTÃO DARK MODE */
+#botao-dark{
+    cursor: pointer;
+
+    margin-top: 20px;
+    margin-right: 900px;
+    margin-left: 20px;
     align-items: center;
+
+    font-size: xx-large;
+    border: none;
+    background-color: #fafafa;
+}
+
+/* TOPO DA PÁGINA / MENU */
+header .container{
+    border: 1px solid green;
+    display: flex;
     justify-content: right;
+    align-items: center;
+    padding: 16px;
+    margin-top: -37px;
+    margin-left: 700px;
     text-decoration: none;
 }
 
 /* estilização e espaçamento do menu */
-header a {
+header a{
     margin-right: 10px;
     text-decoration: none;
-    color: #000;
+    color: var(--cor-nav);
     font-size: small;
     font-family: verdana, Helvetica, sans-serif;
 }
 
-header a:hover {
+header a:hover{
     text-decoration: underline;
 }
 
-header .container i {
+header .container i{
     margin-left: 25px;
     margin-right: 20px;
 }
 
-header .container i:hover {
+header .container i:hover{
     margin-left: 25px;
     margin-right: 20px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
-header .profile {
+header .profile{
     width: 34px;
     height: 34px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* ÁREA DE PESQUISA / PRINCIPAL */
@@ -52,7 +82,6 @@ main .logo{
     justify-content: center;
     align-items: center;
     font-size: 100px;
-
 }
 
 .logo-text{
@@ -66,12 +95,12 @@ main .logo{
     font-weight: bold;
 }
 
-/* caixa de pesquisa */
+/* CAIXA DE PESQUISA */
 .container-search{
     display: flex;
     justify-content: center;
 
-    border: 1px solid #dedede;
+    border: 1px solid var(--cor-sombras);
     border-radius: 50px;
 
     margin-top: 30px;
@@ -80,49 +109,106 @@ main .logo{
     padding: 15px;
 }
 
+.container-search:hover{
+    box-shadow: var(--cor-sombras) 1px 1px 4px 1px;
+}
+
 .search{
     display: flex;
     align-items: flex-start;
-    margin-left: -310px;
+    margin-left: -40px;
 }
 
 /* para deixar a borda do input invisível */
 .input{
     border: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 /* para retirar a borda que se forma ao clicar no input */
 .input:focus{
-    box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-/* botoes */
-.botao{
+/* BOTOES */
+.botoes{
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
-.botoes{
+.botao:hover{
+    box-shadow: var(--cor-sombras) 1px 1px 1px 1px; 
+}
+
+.botao{
     cursor: pointer;
     margin-right: 10px;
-
+    
     border: none;
     border-radius: 5px;
     padding: 10px;
 
     font-size: 15px;
     color: #474747;
-    background-color: #f8f9fa;
+    background-color: var(--boxes);
 }
 
 /* assinatura */
 .marca {
     display: flex;
     justify-content: flex-end;
-    font-family: Courier, monospace, verdana;
-    margin-top: 220px;
+    margin-top: -18px;
     margin-right: 5px;
+    font-family: Courier, monospace, verdana;
+}
+
+.marca:hover{
+    cursor: default;
+    color: #2354AE;
+}
+
+/* RODAPÉ */
+.container-footer{
+    margin-top: 137px;
+}
+
+.formatacao {
+    margin-left: 15px;
+    word-spacing: 20px;
+
+    color: #474747;
+    font-family: verdana, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.footer-servidor{
+    display: flex;
+    padding: 18px;
+    background-color: var(--boxes);
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: var(--boxes);
+}
+
+.footer-menu span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* formatando aqui somente o "como funciona a pesquisa" */
+.footer-menu .unique-format{
+    word-spacing: 0px;
+}
+
+.menu{
+    margin-left: 90px;
+}
+
+.right-text{
+    margin-right: 90px;
 }
