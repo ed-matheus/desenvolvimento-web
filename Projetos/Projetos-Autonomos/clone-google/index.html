@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/dark-mode.css">
     <title>Google - Clone</title>
 </head>
-<body id="tudo">
+<body>
     <!-- cabeçalho / menu -->
     <header>
-        <button type="button" id="botao-dark" onclick="clicou()">
+
+        <button type="button" class="botao-dark" onclick="darkMode(this)" onclick="lightMode(this)">
             <i class="fa-solid fa-moon"></i>
         </button>
+
         <div class="container">
             <nav>
-                <a href="#">Moonmail</a>
-                <a href="#">Imagens</a>
+                <a class="a" href="#">Moonmail</a>
+                <a class="b" href="#">Imagens</a>
             </nav>
             <!-- inserção do ícone -->
             <i class="fa-solid fa-bars"></i>
@@ -48,8 +51,8 @@
 
         <!-- botões abaixo da caixa de busca -->
         <div class="botoes">
-            <button class="botao">Pesquisa Moongle</button>
-            <button class="botao">Estou sortudo</button>
+            <button class="botao-a">Pesquisa Moongle</button>
+            <button class="botao-b">Estou sortudo</button>
         </div>
 
     </main>
@@ -71,7 +74,7 @@
                     <span>Publicidade</span>
                     <span class="unique-format">Como funciona a Pesquisa</span>
                 </div>
-                <div class="right-text menu formatacao">
+                <div id="light" class="menu formatacao right-text ">
                     <span>Privacidade</span>
                     <span>Termos</span>
                     <span>Configurações</span>

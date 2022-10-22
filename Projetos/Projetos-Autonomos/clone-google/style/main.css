@@ -3,6 +3,7 @@
     --cor-nav: #000;
     --cor-sombras: #d1d1d1;
     --boxes: #ededed;
+    --fundo: #fafafa;
 }
 
 * {
@@ -12,11 +13,10 @@
 }
 
 body{
-    background-color: #fafafa;
+    background-color: var(--fundo);
 }
 
-/* BOTÃO DARK MODE */
-#botao-dark{
+.botao-dark {
     cursor: pointer;
 
     margin-top: 20px;
@@ -26,23 +26,34 @@ body{
 
     font-size: xx-large;
     border: none;
-    background-color: #fafafa;
+    background-color: var(--fundo);
+}
+
+.botao-dark:focus{
+    outline: 0;
 }
 
 /* TOPO DA PÁGINA / MENU */
 header .container{
-    border: 1px solid green;
     display: flex;
     justify-content: right;
     align-items: center;
     padding: 16px;
-    margin-top: -37px;
+    margin-top: -57px;
     margin-left: 700px;
     text-decoration: none;
 }
 
 /* estilização e espaçamento do menu */
-header a{
+header .a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--cor-nav);
+    font-size: small;
+    font-family: verdana, Helvetica, sans-serif;
+}
+
+header .b{
     margin-right: 10px;
     text-decoration: none;
     color: var(--cor-nav);
@@ -99,6 +110,7 @@ main .logo{
 .container-search{
     display: flex;
     justify-content: center;
+    align-items: center;
 
     border: 1px solid var(--cor-sombras);
     border-radius: 50px;
@@ -121,8 +133,9 @@ main .logo{
 
 /* para deixar a borda do input invisível */
 .input{
-    border: none;
     margin-left: 10px;
+    border: none;
+    background-color: var(--fundo);
 }
 
 /* para retirar a borda que se forma ao clicar no input */
@@ -141,10 +154,23 @@ main .logo{
     box-shadow: var(--cor-sombras) 1px 1px 1px 1px; 
 }
 
-.botao{
+.botao-a{
     cursor: pointer;
     margin-right: 10px;
     
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    font-size: 15px;
+    color: #474747;
+    background-color: var(--boxes);
+}
+
+.botao-b {
+    cursor: pointer;
+    margin-right: 10px;
+
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -190,7 +216,6 @@ main .logo{
 
 .footer-menu{
     display: flex;
-    justify-content: space-between;
     padding: 18px;
     background-color: var(--boxes);
 }
