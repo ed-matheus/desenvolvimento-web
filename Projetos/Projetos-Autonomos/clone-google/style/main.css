@@ -150,7 +150,11 @@ main .logo{
     margin-top: 30px;
 }
 
-.botao:hover{
+.botao-a:hover{
+    box-shadow: var(--cor-sombras) 1px 1px 1px 1px; 
+}
+
+.botao-b:hover{
     box-shadow: var(--cor-sombras) 1px 1px 1px 1px; 
 }
 

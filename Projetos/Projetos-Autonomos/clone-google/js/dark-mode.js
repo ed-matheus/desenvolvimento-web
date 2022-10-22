@@ -5,8 +5,11 @@ function darkMode() {
     background.style.backgroundColor = "#1f1f1f";
 
     // cor do botao dark mode
+    const fundo_botao = document.querySelector('.botao-dark');
+    fundo_botao.style.backgroundColor = "#1f1f1f";
+
     const botao = document.querySelector('.botao-dark');
-    botao.style.backgroundColor = "#1f1f1f";
+    botao.style.color = "#fafafa";
 
     // cores do header
     const menu_icon = document.querySelector('header');
@@ -28,6 +31,9 @@ function darkMode() {
 
     const input = document.querySelector('.input');
     input.style.backgroundColor = "#1f1f1f";
+
+    const input_text = document.querySelector('.input');
+    input_text.style.color = "#fafafa";
 
     // trocando cor dos botoes
     const button = document.querySelector('.botao-a');
@@ -63,4 +69,3 @@ function darkMode() {
     const footer_textRight2 = document.getElementById('light');
     footer_textRight2.style.color = "#fafafa";
 }
-
