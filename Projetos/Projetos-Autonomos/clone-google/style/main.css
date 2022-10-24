@@ -29,10 +29,6 @@ body{
     background-color: var(--fundo);
 }
 
-.botao-dark:focus{
-    outline: 0;
-}
-
 /* TOPO DA PÁGINA / MENU */
 header .container{
     display: flex;
@@ -85,20 +81,22 @@ header .profile{
 }
 
 /* ÁREA DE PESQUISA / PRINCIPAL */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* logo */
 main .logo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 100px;
 }
 
 .logo-text{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: -25px;
 
     font-size: 70px;
@@ -107,33 +105,26 @@ main .logo{
 }
 
 /* CAIXA DE PESQUISA */
-.container-search{
+main .container-search{
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    width: 550px;
+    height: 45px;
+    padding-left: 15px;
+    margin-top: 30px;
 
     border: 1px solid var(--cor-sombras);
     border-radius: 50px;
-
-    margin-top: 30px;
-    margin-right: 230px;
-    margin-left: 230px;
-    padding: 15px;
 }
 
-.container-search:hover{
+main .container-search:hover{
     box-shadow: var(--cor-sombras) 1px 1px 4px 1px;
-}
-
-.search{
-    display: flex;
-    align-items: flex-start;
-    margin-left: -40px;
 }
 
 /* para deixar a borda do input invisível */
 .input{
-    margin-left: 10px;
+    margin-left: 5px;
     border: none;
     background-color: var(--fundo);
 }
