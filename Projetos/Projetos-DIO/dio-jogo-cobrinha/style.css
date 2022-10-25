@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212121;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
