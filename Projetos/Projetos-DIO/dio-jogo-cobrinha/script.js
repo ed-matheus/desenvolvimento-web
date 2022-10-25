@@ -18,19 +18,19 @@ let food = {
 
 // criando e definindo a cor com função.
 function criarBG(){
-    context.fillStyle = "lightgreen"; // o fillStyle trabalha com o estilo do canvas/contexto.
+    context.fillStyle = "#48b038"; // o fillStyle trabalha com o estilo do canvas/contexto.
     context.fillRect(0, 0, 16 * box, 16 * box); // o fillRect desenha o retangulo onde acontece o jogo.
 }
 
 function criarSnake(){
     for(i = 0; i < snake.length; i++){
-        context.fillStyle = "blue";
+        context.fillStyle = "darkgreen";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood(){
-    context.fillStyle = "yellow";
+    context.fillStyle = "#e03131";
     context.fillRect(food.x, food.y, box, box);
 }
 
