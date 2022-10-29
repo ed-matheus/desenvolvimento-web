@@ -9,20 +9,17 @@ body{
     background-color: #bbbbbb;
 }
 
-/* cabeçalho */
+/* HEADER */
 header .container{
-    display: flex;
-
-    padding: 5px;
-    padding-left: 20px;
+    padding: 5px 5px 5px 20px;
     margin: 10px;
 
+    border-radius: 5px;
     background-color: white;
 }
 
-/* conversas/contatos */
+/* CONVERSAS / CONTATOS */
 main{
-    border: 1px solid blue;
     display: flex;
     margin: 10px;
 }
@@ -32,9 +29,11 @@ main .chats{
     flex-direction: column;
     align-items: left;
 
-    padding: 10px 10px 295px 10px; /* a ordem aqui é: superior - direita - inferior - esquerda */
+    width: 50%;
+    padding: 10px; /* a ordem aqui é: superior - direita - inferior - esquerda */
     margin: 0px 5px 0px 0px;
 
+    border-radius: 5px;
     background-color: white;
 }
 
@@ -42,7 +41,7 @@ main .friend{
     display: flex;
     align-items: center;
 
-    padding: 5px 130px 5px 5px;
+    padding: 5px;
     margin-top: 5px;
 
     background-color: #bbbbbb;
@@ -56,12 +55,38 @@ main .friend{
     margin-right: 10px;
 }
 
-/* conversa */
-main .chat-area{
+/* CONVERSA / MENSAGENS */
+.chat-area{
     display: flex;
+    flex-direction: column;
+    width: 100%;
 
-    padding: 5px;
-    padding-left: 5px;
-
+    border-radius: 5px;
     background-color: white;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    padding: 15px 15px 15px 8px;
+    margin: 0px 0px 0px 0px;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+.wallpaper{
+    height: 450px;
+}
+
+/* CAMPO DE DIGITAÇÃO */
+.typing{
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+
+    border: 1px solid black;
+    border-radius: 5px;
 }
