@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/dark-mode.css">
+    <title>Google - Clone</title>
+</head>
+<body>
+    <!-- cabeçalho / menu -->
+    <header>
+        <button type="button" class="botao-dark" onclick="darkMode(this)">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <div class="container">
+            <nav>
+                <a class="a" href="#">Moonmail</a>
+                <a class="b" href="#">Imagens</a>
+            </nav>
+            <!-- inserção do ícone -->
+            <i class="fa-solid fa-bars"></i>
+            <!-- imagem do perfil -->
+            <img src="img/profile-photo.png" alt="imagem de perfil da conta" class="profile">   
+        </div>
+    </header>
+
+    <!-- logo e box de pesquisa -->
+    <main>
+        <!-- logo do navegador -->
+        <div class="logo">
+            <i class="fa-sharp fa-solid fa-globe"></i>
+            <div class="logo-text">
+                <p>Moongle</p>
+            </div>
+        </div>
+
+        <!-- caixa de busca -->
+        <div class="container-search">
+            <div class="search">
+                <label>
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <input class="input" type="text" size="45" />
+                </label>
+            </div>
+        </div>
+
+        <!-- botões abaixo da caixa de busca -->
+        <div class="botoes">
+            <button class="botao-a">Pesquisa Moongle</button>
+            <button class="botao-b">Estou sortudo</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- rodapé da página -->
+        <div class="container-footer">
+            <div class="marca">
+                developed by Ed Matheus
+            </div>
+            <div class="footer-servidor">
+                <div class="formatacao">Brasil</div>
+            </div>
+            <hr>
+            <div class="footer-menu">
+                <div class="menu formatacao">
+                    <span>Sobre</span>
+                    <span>Publicidade</span>
+                    <span class="unique-format">Como funciona a Pesquisa</span>
+                </div>
+                <div id="light" class="menu formatacao right-text ">
+                    <span>Privacidade</span>
+                    <span>Termos</span>
+                    <span>Configurações</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- chamando o kit de ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/89d4f401d9.js" crossorigin="anonymous"></script>
+    <!-- linkando com o arquivo dark-mode.js -->
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>
