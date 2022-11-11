@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #bbbbbb;
+}
+
+/* HEADER */
+header .container{
+    padding: 5px 5px 5px 20px;
+    margin: 10px;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* CONVERSAS / CONTATOS */
+main{
+    display: flex;
+    margin: 10px;
+}
+
+main .chats{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    width: 50%;
+    padding: 10px; /* a ordem aqui é: superior - direita - inferior - esquerda */
+    margin: 0px 5px 0px 0px;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+main .friend{
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+    margin-top: 5px;
+
+    background-color: #bbbbbb;
+    border-radius: 5px;
+}
+
+.avatar{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* CONVERSA / MENSAGENS */
+.chat-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    padding: 15px 15px 15px 8px;
+    margin: 0px 0px 0px 0px;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+.wallpaper{
+    height: 450px;
+}
+
+/* CAMPO DE DIGITAÇÃO */
+.typing{
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
