@@ -1,4 +1,4 @@
-# Bem-vindo aos meus projetos de Front End! :space_invader: 
+# Bem-vindo aos meus projetos de Front End! :wave: 
 
 Aqui você poderá encontrar exercícios de lógica feitos por mim em JavaScript, e meus trabalhos de Desenvolvimento Web desde meu primeiro Website até o meu último projeto (autônomo ou feito em algum curso/bootcamp). 
 
