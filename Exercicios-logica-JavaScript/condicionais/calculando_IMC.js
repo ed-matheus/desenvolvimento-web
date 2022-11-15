@@ -1,5 +1,5 @@
 /*
-2) Elabore um algoritmo que, dado o peso e a altura de um adulto, mostre sua condição de acordo com a tabela abaixo.
+Elabore um algoritmo que, dado o peso e a altura de um adulto, mostre sua condição de acordo com a tabela abaixo.
 
 Fórmula do IMC:
 IMC = peso / (altura * altura)
