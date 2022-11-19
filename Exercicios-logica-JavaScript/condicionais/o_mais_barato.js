@@ -1,6 +1,6 @@
 /*
-Fácil 8 - Faça um programa que pergunte o preço de três produtos 
-e informe qual produto você deve comprar, sabendo que a decisão é sempre o mais barato.  
+    Fácil 8 - Faça um programa que pergunte o preço de três produtos 
+    e informe qual produto você deve comprar, sabendo que a decisão é sempre o mais barato.  
 */
 
 const preco1 = 126.20;

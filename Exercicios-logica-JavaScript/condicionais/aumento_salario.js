@@ -1,21 +1,21 @@
 /*
-As organizações CSM resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para 
-desenvolver o programa que calculará os reajustes.
+    As organizações CSM resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para 
+    desenvolver o programa que calculará os reajustes.
 
-Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, 
-baseado no salário atual:
+    Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, 
+    baseado no salário atual:
 
-a. Salários até R$ 280, 00(incluindo): aumento de 20 %;
-b. Salários entre R$ 280, 00 e R$700, 00: aumento de 15 %;
-c. Salários entre R$ 700, 00 e R$ 1500, 00: aumento de 10 %;
-d. Salários de R$ 1500, 00 em diante: aumento de 5 %
+    a. Salários até R$ 280, 00(incluindo): aumento de 20 %;
+    b. Salários entre R$ 280, 00 e R$700, 00: aumento de 15 %;
+    c. Salários entre R$ 700, 00 e R$ 1500, 00: aumento de 10 %;
+    d. Salários de R$ 1500, 00 em diante: aumento de 5 %
 
-Após o aumento ser realizado, informe na tela:
+    Após o aumento ser realizado, informe na tela:
 
-a. O salário antes do reajuste;
-b. O percentual de aumento aplicado;
-c. O valor do aumento;
-d. O novo salário, após o aumento.  
+    a. O salário antes do reajuste;
+    b. O percentual de aumento aplicado;
+    c. O valor do aumento;
+    d. O novo salário, após o aumento.  
 */
 
 const salario = 1230;
