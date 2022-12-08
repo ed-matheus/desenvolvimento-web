@@ -1,23 +1,21 @@
+function convertPokemonTypesToLi(pokemonTypes) {
+    return pokemonTypes.map((typeSlot) => '<li class="type">'+ typeSlot.type.name +'</li>')
 
-// navegando na página
-const offset = 0;
-const limit = 10;
-const url = 'https://pokeapi.co/api/v2/pokemon?offset='+offset+'&limit='+limit;
+}
 
 // função para converter o pokemon em uma lista
 function convertPokemonToLi(pokemon) {
     return `
         <li class="pokemon">
-                <span class="number">#001</span>
+                <span class="number">#${pokemon.order}</span>
                 <span class="name">${pokemon.name}</span>
 
                 <div class="detail">
                     <ol class="types">
-                        <li class="type">Grass</li>
-                        <li class="type">Poison</li>
+                        ${convertPokemonTypesToLi(pokemon.types).join('')}
                     </ol>
 
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                    <img src="${pokemon.sprites.other.dream_world.front_default}"
                         alt="${pokemon.name}">
                 </div>              
             </li>
@@ -28,13 +26,7 @@ function convertPokemonToLi(pokemon) {
 const pokemonList = document.getElementById('pokemonList')
 
 // interface de uma "promise"
-pokeApi.getPokemons().then((pokemons) => {
-    const listItems = []
-    // "for" para adicionar o pokemon, via código HTML incluído por JS 
-    for (let i = 0; i < pokemons.length; i++) {
-        const pokemon = pokemons[i];
-        listItems.push(convertPokemonToLi(pokemon))    
-    }
-
-    console.log(listItems)
+pokeApi.getPokemons().then((pokemons = []) => {
+    const newHTML = pokemons.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML = newHTML
 })
