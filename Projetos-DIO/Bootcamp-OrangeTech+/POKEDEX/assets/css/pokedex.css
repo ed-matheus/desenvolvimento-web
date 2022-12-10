@@ -147,4 +147,19 @@ body {
     height: 70px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
 
+.pagination button {
+    padding: 0.25rem 0.5rem;
+    background-color: #6c79db;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: .725rem;
+}
