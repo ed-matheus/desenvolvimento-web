@@ -4,9 +4,9 @@ Aqui você poderá encontrar exercícios de lógica feitos por mim em JavaScript
 
 #### Cursos feitos até o momento:
 
-- Bootcamp HTML Web Developer (Digital Innovation One - DIO)
+- Bootcamp HTML Web Developer (Digital Innovation One - DIO) - <em> Completo </em>
 - Bootcamp OrangeTech (Digital Innovation One - DIO) - <em>Incompleto</em>
-- Desenvolvimento Web Completo 2022 (Udemy - Jamilton Damasceno e Jorge Sant Ana)
+- Desenvolvimento Web Completo 2022 (Udemy - Jamilton Damasceno e Jorge Sant Ana) - <em> Em andamento </em>
 
 
 
