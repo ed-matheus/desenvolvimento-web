@@ -1,0 +1,40 @@
+
+body {
+    background-image: url(../img/fundo.png);
+    font: 16px helvetica, sans-serif;
+}
+
+.main-content {
+    width: 900px;
+}
+
+#menu {
+    font-weight: 700;
+    color: rgb(93, 93, 129);
+    background-color: #d3d3d3;
+    padding: 18px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+h1 {
+    color: gray;
+    font-size: 16px;
+}
+
+.conteudo {
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.photo-border {
+    border: 8px solid #a75a43;
+}
+
+#rodape {
+    text-align: center;
+}
+
