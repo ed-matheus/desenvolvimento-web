@@ -10,11 +10,9 @@ Aqui você poderá encontrar exercícios de lógica feitos por mim em JavaScript
 
 
 
- #### <style text-align="center">
-
  #### :rocket: It´s Code Adventure Time! :rocket:
 
- #### </style>
+ #### 
 
 
 
