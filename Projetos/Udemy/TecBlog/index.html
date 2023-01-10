@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/tech-icon.png">
         <title>TecBlog - O seu blog de Tecnologia</title>
     </head>
     <body>
@@ -12,15 +13,19 @@
         <!-- Cabeçalho e menu de navegação -->
         <header id="navbar">
             <div id="logo">
-                <h1>Tec<span id="blog">Blog</span></h1>  
+                <h1>
+                    <a href="index.html">
+                        Tec<span id="blog">Blog</span>
+                    </a>
+                </h1>  
             </div>
                 
             <div id="menu">
-                <a href="">Home</a>
-                <a href="">Jogos</a>
-                <a href="">Celulares</a>
-                <a href="">Informática</a>
-                <a href="">Eletrônicos</a>
+                <a href="index.html">Home</a>
+                <a href="pages/informatica.html">Informática</a>
+                <a href="pages/celulares.html">Celulares</a>
+                <a href="pages/eletronicos.html">Eletrônicos</a>
+                <a href="pages/jogos.html">Jogos</a>
             </div>          
         </header> <!-- // Fim do cabeçalho e menu -->
 
@@ -30,8 +35,8 @@
                 <!-- abertura do post -->
                 <div class="post"> 
                     <h2>Postagem 1</h2>
-                    <span class="data-postagem">Postado em 20 de Março 2022</span>
-                    <img width="620px" src="img/imagem1.jpg" alt="notebook e café">
+                    <span class="data-postagem">Postado em 30 de Janeiro 2022</span>
+                    <img width="620px" src="img/outras/imagem1.jpg" alt="controles de PS">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim vel lectus malesuada facilisis. Etiam
                         congue faucibus consequat. Aliquam sed odio at nunc cursus pulvinar. Vivamus at urna pretium, blandit turpis vitae,
@@ -43,8 +48,8 @@
                 <!-- abertura do post -->
                 <div class="post">
                     <h2>Postagem 2</h2>
-                    <span class="data-postagem">Postado em 20 de Março 2022</span>
-                    <img width="620px" src="img/imagem4.jpg" alt="escritório com equipamentos da apple">
+                    <span class="data-postagem">Postado em 23 de Março 2022</span>
+                    <img width="620px" src="img/games/pscontrols.jpg" alt="escritório com equipamentos da apple">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim vel lectus malesuada facilisis.
                         Etiam
@@ -54,7 +59,21 @@
                     </p>
                     <a href="">Leia mais</a>
                 </div> <!-- // fechamento do post -->
-            </div>
+
+                <div class="post">
+                    <h2>Postagem 3</h2>
+                    <span class="data-postagem">Postado em 25 de Março 2022</span>
+                    <img width="620px" src="img/outras/imagem2.jpg" alt="escritório com equipamentos da apple">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget enim vel lectus malesuada facilisis.
+                        Etiam
+                        congue faucibus consequat. Aliquam sed odio at nunc cursus pulvinar. Vivamus at urna pretium, blandit turpis
+                        vitae,
+                        dapibus nulla.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div> <!-- // fechamento do post -->
+            </div> 
 
             <div id="area-lateral">
                 <div class="conteudo-lateral">
@@ -82,8 +101,7 @@
             <footer id="rodape">
                 Todos os direitos reservados
             </footer>
-        </div>
-        <!-- Fim da área principal -->
+        </div> <!-- Fim da área principal -->
 
     </body>
 </html>

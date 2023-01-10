@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#navbar #logo h1 a {
+    text-decoration: none;
+}
+
 body{
     font-size: 1em;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -84,16 +88,20 @@ a:hover {
     text-decoration: underline;
 }
 
-#navbar a:link, #navbar a:visited {
+#navbar #menu a:link, #navbar #menu a:visited {
     color: #fff;
     padding: 8px 12px;
     font-weight: 600;
 }
 
-#navbar a:hover {
+#navbar #menu a:hover {
     color: #2257c9;
     background: #fff;
     text-decoration: none;
+}
+
+#navbar #logo a {
+    color: #4e4e4e;
 }
 
 /* Outras formatações gerais */
