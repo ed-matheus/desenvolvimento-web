@@ -2,6 +2,7 @@
 /* Ajustando o height */
 html, body, #main {
     height: 100%;
+    min-height: 530px;
     overflow-x: hidden;
 }
 
@@ -46,6 +47,12 @@ header h1 {
     color: #f4f4f4;
     font-size: 2em;
     font-weight: 600;
+    border: none;
+}
+
+.btn-custom:hover {
+    color: #232323;
+    background-color: #f4f4f4;
 }
 
 /* Rodapé */
@@ -73,6 +80,11 @@ footer p a:hover {
     html {
         background: url(../img/dev-background.jpg);
         background-size: 1500px;
+    }
+
+    header h1 {
+        color: #fff;
+        font-size: 2.8em;
     }
 
     /* Conteúdo Principal */
@@ -103,6 +115,11 @@ footer p a:hover {
     html {
         background: url(../img/dev-background.jpg);
         background-size: 1500px;
+    }
+
+    header h1 {
+        color: #fff;
+        font-size: 3.2em;
     }
 
     /* Conteúdo Principal */
