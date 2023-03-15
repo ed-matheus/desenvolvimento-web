@@ -1,181 +1,118 @@
-
 /* Ajustando o height */
-html, body, #main {
+html, body, #home {
     height: 100%;
-    min-height: 530px;
+    min-height: 830px;
+    min-width: 260px;
     overflow-x: hidden;
 }
 
 /* Background da página */
-html {
-    background: url(../img/dev-background.jpg);
-    background-size: 1650px;
-}
-
 body {
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: #ececec;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #1344c2;
+    background-color: rgba(35, 35, 35, 0.9);
 }
 
-header h1 {
-    color: #fff;
-    font-size: 3.5em;
+header a {
+    color: #ececec;
 }
 
-.opacity {
-    background: rgba(19, 68, 194, 0.6);
+header a:hover {
+    color: #ececec;
 }
 
-/* Conteúdo Principal */
-#main h1 {
-    font-size: 3em;
-    color: #f4f4f4;
+header ul a:hover {
+    color: #5988FF;
 }
 
-#main p {
+header nav i {
+    color: #ececec;
     font-size: 1.5em;
-    font-weight: 500;
-    color: #f4f4f4;
+}
+
+/* Conteúdo */
+#home .container {
+    margin-top: 77px;
+}
+
+#home img {
+    border: 2px solid #1344C2;
+}
+
+#home img:hover {
+    border: 2px solid #5988FF;
 }
 
 .btn-custom {
-    background-color: #1344c2;
-    color: #f4f4f4;
-    font-size: 2em;
-    font-weight: 600;
-    border: none;
+    background-color: #1344C2;
+    color: #ececec;
 }
 
 .btn-custom:hover {
-    color: #232323;
-    background-color: #f4f4f4;
-}
-
-/* Rodapé */
-footer {
-    margin-top: -47px;
-}
-
-footer p {
-    opacity: 0.3;
-    font-size: 1em;
-}
-
-footer p a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-
-footer p a:hover {
-    color: #f4f4f4;
+    background-color: #5988FF;
+    color: #ececec;
 }
 
 /* MEDIA QUERIES */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    html {
-        background: url(../img/dev-background.jpg);
-        background-size: 1500px;
+    header {
+        font-size: 0.8em;
     }
 
     header h1 {
-        color: #fff;
-        font-size: 2.8em;
+        font-size: 1.4em;
     }
 
-    /* Conteúdo Principal */
-    #main h1 {
-        font-size: 2.6em;
+    #home h2 {
+        font-size: 1.7em;
     }
 
-    #main p {
-        font-size: 1em;
-        font-weight: 500;
-    }
-
-    .btn-custom {
-        background-color: #1344c2;
-        color: #f4f4f4;
-        font-size: 1.6em;
-        font-weight: 600;
-    }
-
-    footer p {
-        opacity: 0.3;
-        font-size: 0.6em;
+    #home img {
+        height: 210px;
+        min-width: 200px;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    html {
-        background: url(../img/dev-background.jpg);
-        background-size: 1500px;
+@media (min-width: 576px) {
+    header {
+        font-size: 0.9em;
     }
 
     header h1 {
-        color: #fff;
-        font-size: 3.2em;
+        font-size: 1.5em;
     }
 
-    /* Conteúdo Principal */
-    #main h1 {
-        font-size: 2.7em;
+    #home h2 {
+        font-size: 2em;
     }
 
-    #main p {
-        font-size: 1.2em;
-        font-weight: 500;
-    }
-
-    .btn-custom {
-        background-color: #1344c2;
-        color: #f4f4f4;
-        font-size: 1.7em;
-        font-weight: 600;
-    }
-
-    footer p {
-        opacity: 0.3;
-        font-size: 0.9em;
+    #home img {
+        height: 210px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    /* Conteúdo Principal */
-    #main h1 {
-        font-size: 2.8em;
+@media (min-width: 768px) {
+    #home h2 {
+        font-size: 2.2em;
     }
 
-    #main p {
-        font-size: 1.3em;
-        font-weight: 500;
-    }
-
-    .btn-custom {
-        background-color: #1344c2;
-        color: #f4f4f4;
-        font-size: 1.8em;
-        font-weight: 600;
-    }
-
-    footer p {
-        opacity: 0.3;
-        font-size: 0.9em;
+    #home img {
+        height: 275px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
+@media (min-width: 992px) {
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    
 }
