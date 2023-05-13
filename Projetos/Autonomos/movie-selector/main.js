@@ -1,4 +1,3 @@
-
 // Declarando lista vazia
 let movieList = [];
 const input = document.getElementById('new-movie');
@@ -83,13 +82,11 @@ function movieSelector() {
 
 // Função para deletar um filme da lista
 function deleteMovie(index) {
-
-    // excluindo task...
+    // excluindo filme...
     movieList.splice(index, 1);
 
     // chamando a função render()
     render();
-
 }
 
 function render() {
@@ -98,7 +95,7 @@ function render() {
     let listaFilmes = document.getElementById('listaFilmes')
     listaFilmes.innerHTML = '';
 
-    // foreach percorrendo a array de tasks
+    // foreach percorrendo a array de filmes
     movieList.forEach((movie, index) => {
 
         // criando a linha (<tr>)
@@ -113,13 +110,13 @@ function render() {
         coluna2.innerHTML = movie;
         coluna2.style = 'background-color: #e7e7e7;';
 
-        // botão de excluir task
+        // botão de excluir filme
         const deleteButton = document.createElement('button');
         deleteButton.className = 'btn btn-sm';
         deleteButton.style = 'margin-left: 5px;';
         deleteButton.addEventListener('click', () => deleteMovie(index));
 
-        // criando o ícone
+        // criando o ícone 'delete'
         const icon = document.createElement('i');
         icon.className = 'fa-solid fa-trash-can text-danger';
 
