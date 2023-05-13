@@ -62,7 +62,9 @@ function movieSelector() {
         // selecionando o container do título pelo id
         const movieContainer = document.getElementById('movie');
         movieContainer.style = `
-            border: 3px solid gray;
+            background-color: #fafafa;
+            border: 3px solid #ffbf08;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
