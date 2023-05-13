@@ -85,7 +85,7 @@ function render() {
 }
 
 
-// Partes do botão de Editar Task (ainda não implantado por completo)
+// Partes do botão de Editar Task (ainda não implementado no projeto)
 
 /*
 function editTask(index) {
