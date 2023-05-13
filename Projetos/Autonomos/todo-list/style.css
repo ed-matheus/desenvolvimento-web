@@ -5,12 +5,29 @@ html, body {
     min-height: 100%;
 }
 
+header {
+    background-color: #16a89f;
+}
+
 /* Header / Cabeçalho */
 header h1 {
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+#icon {
+    font-size: 45px;
+    margin-left: 20px;
 }
 
 /* Input e button */
+#input-container button {
+    background-color: #16a89f;
+}
+
+#input-container button:hover {
+    background-color: #18b9af;
+}
+
 #new-task {
     width: 450px;
     height: 36px;
@@ -23,17 +40,25 @@ header h1 {
 
 /* Alerta */
 #alerta {
-    width: 480px;
-    height: 50px;
-    /* align-items: center; */
+    width: 495px;
+    height: 70px;
     margin: 0px auto;
     margin-top: 20px;
+    margin-bottom: -25px;
+
+    display: flex;
+    align-items: center;
+}
+
+#alerta i {
+    font-size: 22px;
 }
 
 /* Container da lista de tarefas */
 #listContainer {
     width: 680px;
     margin: 0px auto;
+    margin-top: 30px;
     margin-bottom: -280px;
 }
 
@@ -48,6 +73,7 @@ header h1 {
 }
 
 footer {
+    background-color: #16a89f;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -56,4 +82,68 @@ footer {
     text-align: center;
     padding-top: 13px;
     font-weight: 100;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #input-container {
+        width: 380px;
+    }
+
+    #input-container input {
+        width: 280px;
+    }
+
+    #listContainer {
+        width: 415px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #input-container {
+        width: 500px;
+    }
+
+    #input-container input {
+        width: 380px;
+    }
+
+    #listContainer {
+        width: 535px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #input-container {
+        width: 550px;
+    }
+
+    #listContainer {
+        width: 575px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #input-container {
+        width: 650px;
+    }
+
+    #listContainer {
+        width: 675px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #input-container {
+        width: 750px;
+    }
+
+    #listContainer {
+        width: 775px;
+    }
 }

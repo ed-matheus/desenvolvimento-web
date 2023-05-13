@@ -25,22 +25,23 @@
         <div id="page-container">
             <div id="content-wrap">
 
-                <header class="bg-primary text-light p-2 align-text-center">
+                <header class="text-light p-2 d-flex align-items-center">
                     <h1 class="display-5">To-do List (Lista de Tarefas)</h1>
+                    <i class="fa-solid fa-list-check" id="icon"></i>
                 </header>
 
-                <!-- <div id="alerta" class="alert alert-danger" role="alert" style="display: none;">
-                    É necessário que você preencha a tarefa para incluí-la! 
-                    <button type="button" class="close btn" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
-                    </button>
-                </div> -->
-                
-                <div class="container input-group mt-5 mb-3" id="input-container">
-                    <input type="text" class="form-control" id="new-task" placeholder="Digite sua nova tarefa">
-                    <button id="add-task" class="btn btn-primary btn-sm" onclick="addTask()">Adicionar</button>
+                <!-- Alerta -->
+                <div id="alerta" class="alert alert-danger" role="alert" style="display: none;">
+                    É necessário que você preencha o campo da tarefa para incluí-la!
                 </div>
                 
+                <!-- Container do Input -->
+                <div class="container input-group mt-5 mb-3" id="input-container">
+                    <input type="text" class="form-control" id="new-task" placeholder="Digite sua nova tarefa">
+                    <button id="add-task" class="btn btn-sm text-light" onclick="addTask()">Adicionar</button>
+                </div>
+                
+                <!-- A Lista de Tarefas -->
                 <div class="row" id="listContainer">
                     <div class="col">
                         <table class="table">
@@ -51,7 +52,8 @@
                 
             </div>
 
-            <footer class="bg-primary text-light">
+            <!-- Rodapé -->
+            <footer class="text-light">
                 <p>Developed by Edson Matheus</p>
             </footer>
 

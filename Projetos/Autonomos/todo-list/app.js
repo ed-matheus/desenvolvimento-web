@@ -14,13 +14,18 @@ function addTask() {
         input.className = 'form-control border border-danger';
 
         // exibe o alerta
-        // $('.alert').show();
+        $('.alert').show();
 
     } else {
         const input = document.getElementById('new-task');
         input.className = 'form-control';
 
         todoList.push(task);
+
+        if(todoList.length > 0) {
+            // fecha o alerta
+            $('.alert').hide();
+        }
     }
 
     // limpando o campo do input para inclusão de nova task
@@ -30,13 +35,11 @@ function addTask() {
 }
 
 function deleteTask(index) {
-
     // excluindo task...
     todoList.splice(index, 1);
 
     // chamando a função render()
     render();
-
 }
 
 function render() {
@@ -49,32 +52,63 @@ function render() {
     todoList.forEach((task, index) => {
 
         // criando a linha (<tr>)
-        let linha = listaTarefas.insertRow()
+        const linha = listaTarefas.insertRow();
 
         // criando as colunas (<td>)
         const coluna1 = linha.insertCell(0)
         coluna1.innerHTML = `<strong>${index + 1}</strong>`;
-        coluna1.style = 'background-color: #d6d6d6; width: 30px; text-align: center;';
+        coluna1.style = 'background-color: #cfd1d1; width: 30px; text-align: center; padding-top: 12px;';
 
         const coluna2 = linha.insertCell(1)
         coluna2.innerHTML = task;
-        coluna2.style = 'background-color: #e7e7e7;';
+        // coluna2.className = 'd-flex align-center';
+        coluna2.style = 'background-color: #e1e3e3; padding-top: 10px;';
 
-        // botão de excluir task
+        // // botão de excluir task
         const deleteButton = document.createElement('button');
         deleteButton.className = 'btn btn-sm';
-        deleteButton.style = 'margin-left: 5px;';
         deleteButton.addEventListener('click', () => deleteTask(index));
 
-        // criando o ícone
-        const icon = document.createElement('i');
-        icon.className = 'fa-solid fa-trash-can text-danger';
+        // ícone de exclusão da task
+        const deleteIcon = document.createElement('i');
+        deleteIcon.className = 'fa-solid fa-trash-can text-danger';
 
-        deleteButton.appendChild(icon);
+        // editButton.appendChild(editIcon);
+        deleteButton.appendChild(deleteIcon);
 
+        // coluna 4 com o botão de deletar task
         const coluna3 = linha.insertCell(2);
         coluna3.appendChild(deleteButton);
-        coluna3.style = 'background-color: #d6d6d6; width: 30px; text-align: center;'
+        coluna3.style = 'background-color: #cfd1d1; width: 48px; text-align: center;'
 
     });
 }
+
+
+// Partes do botão de Editar Task (ainda não implantado por completo)
+
+/*
+function editTask(index) {
+    
+}
+*/
+
+// botão de editar task (ainda não implantado completamente)
+/*
+const editButton = document.createElement('button');
+editButton.className = 'btn btn-sm';
+editButton.addEventListener('click', () => editTask(index));
+*/
+
+// ícone de edição da task
+/*
+const editIcon = document.createElement('i');
+editIcon.className = 'fa-solid fa-pen-to-square text-primary';
+*/
+
+// coluna 3 com o botão de editar task
+/*
+const coluna3 = linha.insertCell(2);
+coluna3.appendChild(editButton);
+coluna3.style = 'background-color: #d6d6d6; width: 48px; text-align: center;';
+*/
