@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+        <!-- CSS Customizado -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Font Awesome (ícones) -->
+        <script src="https://kit.fontawesome.com/89d4f401d9.js" crossorigin="anonymous"></script>
+
+        <!-- Arquivo JS -->
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+
+                <header class="d-flex align-items-center">
+                    <h1 class="display-5 text-light">O Jogo da Velha</h1>
+                    <img src="img/jogo-da-velha-branco.png" alt="jogo da velha">
+                </header>
+
+                <!-- Alerta de Vitória -->
+                <div id="winAlert" class="alert alert-success" role="alert" style="display: none;">
+                </div>
+
+                <!-- Alerta de Empate -->
+                <div id="drawAlert" class="alert alert-warning" role="alert" style="display: none;">
+                </div>
+
+                <!-- Matriz do Jogo -->
+                <div class="row" id="board">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+
+                <!-- Div vazia para adicionar o botão de reset -->
+                <div class="d-flex justify-content-center mt-5" id="resetButtonContainer">
+                </div>
+
+            </div>
+
+            <footer class="text-light">
+                <p>Developed by Edson Matheus</p>
+            </footer>
+        </div>
+
+        <!-- jQuery Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

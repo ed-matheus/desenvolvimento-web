@@ -1,0 +1,248 @@
+
+/* Cabeçalho da página */
+header {
+    padding: 10px;
+    background-color: #202020;
+}
+
+header h1 {
+    margin-left: 15px;
+}
+
+/* imagem do jogo da velha */
+header img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+/* Mensagem de Vitória */
+#winAlert {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+
+/* Mensagem de Empate */
+#drawAlert {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.cell {
+    border: 1px solid #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* Ajustando o rodapé */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 94px;    /* altura do rodapé */   
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;            /* altura do rodapé */
+
+    text-align: center;
+    padding-top: 13px;
+    font-weight: 100;
+    background-color: #202020;
+}
+
+/* ---------------------------------------------------- MEDIA QUERIES (Responsividade) ---------------------------------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* imagem do jogo da velha */
+    header img {
+        width: 42px;
+        height: 42px;
+        margin-left: 15px;
+    }
+
+    /* Mensagem de Vitória */
+    #winAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    /* Mensagem de Empate */
+    #drawAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 235px;
+        height: 235px;
+        margin: 0 auto;
+        margin-top: 75px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* imagem do jogo da velha */
+    header img {
+        width: 42px;
+        height: 42px;
+        margin-left: 15px;
+    }
+
+    /* Mensagem de Vitória */
+    #winAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    /* Mensagem de Empate */
+    #drawAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 245px;
+        height: 245px;
+        margin: 0 auto;
+        margin-top: 75px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* imagem do jogo da velha */
+    header img {
+        width: 46px;
+        height: 46px;
+        margin-left: 15px;
+    }
+
+    /* Mensagem de Vitória */
+    #winAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    /* Mensagem de Empate */
+    #drawAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+        margin-top: 75px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* imagem do jogo da velha */
+    header img {
+        width: 48px;
+        height: 48px;
+        margin-left: 15px;
+    }
+
+    /* Mensagem de Vitória */
+    #winAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    /* Mensagem de Empate */
+    #drawAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 410px;
+        height: 410px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Mensagem de Vitória */
+    #winAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    /* Mensagem de Empate */
+    #drawAlert {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: -40px;
+        width: 300px;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 420px;
+        height: 420px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+}
+
