@@ -3,7 +3,7 @@
     --cor-nav: #000;
     --cor-sombras: #d1d1d1;
     --boxes: #ededed;
-    --fundo: #fafafa;
+    --fundo: #fff;
 }
 
 * {
@@ -16,10 +16,10 @@ body{
     background-color: var(--fundo);
 }
 
-.botao-dark {
+#changeModeButton {
     cursor: pointer;
 
-    margin-top: 20px;
+    margin-top: 18px;
     margin-right: 900px;
     margin-left: 20px;
     align-items: center;
@@ -27,10 +27,11 @@ body{
     font-size: xx-large;
     border: none;
     background-color: var(--fundo);
+    color: #252525;
 }
 
 /* TOPO DA PÁGINA / MENU */
-header .container{
+header #menu{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -61,12 +62,12 @@ header a:hover{
     text-decoration: underline;
 }
 
-header .container i{
+header #menu i{
     margin-left: 25px;
     margin-right: 20px;
 }
 
-header .container i:hover{
+header #menu i:hover{
     margin-left: 25px;
     margin-right: 20px;
     border-radius: 100%;
@@ -81,10 +82,13 @@ header .profile{
 }
 
 /* ÁREA DE PESQUISA / PRINCIPAL */
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -40px;
 }
 
 /* logo */
@@ -93,6 +97,7 @@ main .logo{
     flex-direction: column;
     align-items: center;
     font-size: 100px;
+    color: #2c2c2c;
 }
 
 .logo-text{
@@ -158,7 +163,7 @@ main .container-search:hover{
     padding: 10px;
 
     font-size: 15px;
-    color: #474747;
+    color: #252525;
     background-color: var(--boxes);
 }
 
@@ -171,7 +176,7 @@ main .container-search:hover{
     padding: 10px;
 
     font-size: 15px;
-    color: #474747;
+    color: #252525;
     background-color: var(--boxes);
 }
 
