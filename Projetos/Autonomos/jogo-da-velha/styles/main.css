@@ -1,5 +1,5 @@
 
-/* Cabeçalho da página */
+/* Cabeçalho das páginas */
 header {
     padding: 10px;
     background-color: #202020;
@@ -14,6 +14,39 @@ header img {
     width: 50px;
     height: 50px;
     margin-left: 15px;
+}
+
+/* ---------------------------------------------------- PÁGINA PRINCIPAL (Arquivo index.html) ---------------------------------------------------- */
+
+/* Imagem do container */
+#main_container {
+    /* border: 1px solid red; */
+    margin-top: 65px;
+}
+
+#main_container img {
+    width: 160px;
+}
+
+#main_container p {
+    font-size: 25px;
+}
+
+#main_container p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* -------------------------------------------- PÁGINA DO JOGO (Arquivos pvp_game.html e pvc_game.html) -------------------------------------------- */
+header a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+header a:hover {
+    color: #e2e2e2;
 }
 
 /* Mensagem de Vitória */
@@ -49,6 +82,7 @@ header img {
     cursor: pointer;
 }
 
+/* ----------------------------------------------------- RODAPÉ (Todos os Arquivos) ---------------------------------------------------- */
 /* Ajustando o rodapé */
 #page-container {
     position: relative;
@@ -59,6 +93,7 @@ header img {
     padding-bottom: 94px;    /* altura do rodapé */   
 }
 
+/* Rodapé */
 footer {
     position: absolute;
     bottom: 0;
@@ -69,6 +104,15 @@ footer {
     padding-top: 13px;
     font-weight: 100;
     background-color: #202020;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* ---------------------------------------------------- MEDIA QUERIES (Responsividade) ---------------------------------------------------- */

@@ -16,27 +16,46 @@
         <script src="https://kit.fontawesome.com/89d4f401d9.js" crossorigin="anonymous"></script>
 
         <!-- Arquivo JS -->
-        <script src="/javascript/main.js" defer></script>
+        <script src="../javascript/app.js" defer></script>
     </head>
 
     <body>
         <div id="page-container">
             <div id="content-wrap">
 
-                <header class="d-flex align-items-center">
-                    <a href="index.html"><h1 class="display-5 text-light">O Jogo da Velha</h1></a>
-                    <img src="img/jogo-da-velha-branco.png" alt="jogo da velha">
+                <header class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html"><h1 class="display-5 text-light">O Jogo da Velha</h1></a>
+                        <img src="img/jogo-da-velha-branco.png" alt="jogo da velha">
+                    </div>
+                    <div>
+                        <a href="index.html">Voltar</a>
+                    </div>
                 </header>
 
-                <div class="d-flex align-items-center justify-content-center flex-column" id="main_container">
-                    <img src="img/jogo-da-velha.png" alt="jogo da velha">
+                <!-- Alerta de Vitória -->
+                <div id="winAlert" class="alert alert-success" role="alert" style="display: none;">
+                </div>
 
-                    <a href="pvp_game.html">
-                        <button class="btn btn-dark btn-lg mt-5 mb-3" value="PVP" onclick="modeSelector()">Jogador VS Jogador</button>
-                    </a>
-                    <a href="pvc_game.html">
-                        <button class="btn btn-dark btn-lg" value="PVC" onclick="modeSelector()">Jogador VS Computador</button>
-                    </a>
+                <!-- Alerta de Empate -->
+                <div id="drawAlert" class="alert alert-warning" role="alert" style="display: none;">
+                </div>
+
+                <!-- Matriz do Jogo -->
+                <div id="board">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+
+                <!-- Div vazia para adicionar o botão de reset -->
+                <div class="d-flex justify-content-center mt-5" id="resetButtonContainer">
                 </div>
 
             </div>

@@ -14,7 +14,6 @@ cells.forEach(cell => {
 function cellClicked(event) {
     const cell = event.target;
     const index = Array.from(cells).indexOf(cell);
-    // console.log(`index = ${index}`);
 
     if(gameBoard[index] !== '') {
         return;
@@ -29,7 +28,6 @@ function cellClicked(event) {
 
     // Marca o index específico dentro da Array
     gameBoard[index] = currentPlayer;
-    console.log(gameBoard);
 
     // Função que verifica a vitória
     if(checkWin()) {
@@ -37,7 +35,7 @@ function cellClicked(event) {
         const divAlert = document.getElementById('winAlert');
         divAlert.style = 'text-align:center';
         divAlert.innerHTML = `
-            <p style="font-size: 32px;">O vencedor é ${currentPlayer}!</p> 
+            <p style="font-size: 32px;">O vencedor é '${currentPlayer}'!</p> 
             <i class="fa-solid fa-trophy" style="font-size: 35px; margin-left: 5px;"></i>
         `;
         
@@ -113,7 +111,6 @@ function checkDraw() {
 function checkArray() {
     // Loop para verificar se todas as células foram preenchidas
     for (let i = 0; i < gameBoard.length; i++) {
-        console.log(gameBoard[i]);
         if(gameBoard[i] === null || gameBoard[i] === '') {
             return false;
         }
