@@ -3,19 +3,20 @@ let movieList = [];
 const input = document.getElementById('new-movie');
 
 // Função que adiciona novos filmes à lista
-function addMovie() {
+function addMovie(event) {
+    const input = document.getElementById('new-movie');
+
+    
 
     // pegando o 'value' do input
     const movie = input.value;
 
     // esta condição verifica se o campo foi preenchido ou não
-    if(input.value == '') {
-        const input = document.getElementById('new-movie');
+    if(movie == '') {
         input.className = 'form-control border border-danger';
         input.placeholder = 'Campo vazio, digite algum filme!';
 
     } else {
-        const input = document.getElementById('new-movie');
         input.className = 'form-control';
         input.placeholder = 'Digite seus filmes aqui';
 
@@ -27,6 +28,16 @@ function addMovie() {
 
     render();
 }
+
+// Código jQuery para adicionar o filme apertando a tecla "Enter"
+$(document).ready(() => {
+    $('#new-movie').on('keydown', e => {
+        console.log(e.keyCode)
+        if(e.keyCode == 13) {
+            addMovie()
+        }
+    })
+})
 
 // Função que seleciona o filme de fato, aleatóriamente
 function movieSelector() {
