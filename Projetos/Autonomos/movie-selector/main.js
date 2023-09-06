@@ -6,8 +6,6 @@ const input = document.getElementById('new-movie');
 function addMovie(event) {
     const input = document.getElementById('new-movie');
 
-    
-
     // pegando o 'value' do input
     const movie = input.value;
 

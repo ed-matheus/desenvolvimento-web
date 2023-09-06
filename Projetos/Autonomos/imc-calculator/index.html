@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculo de IMC</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- JavaScript -->
+        <script src="JS/script.js" defer></script>
+    </head>
+
+    <body class="d-flex align-items-center">
+
+        <div class="container_left p-5 d-flex flex-column align-items-center justify-content-center">
+
+            <div class="title d-flex align-items-center"> 
+                <i class="fa-solid fa-calculator fs-3 me-2"></i>
+                <h2>Calcule seu IMC (Índice de Massa Corporal)</h2>
+            </div>
+
+            <div class="forms d-flex flex-column">
+
+                <div id="gender" class="mb-4 w-100">
+                    <label class="label-style">Sexo:</label><br>
+                    <button id="man" class="btn px-4 py-2 me-3">
+                        <img class="mb-2" src="img/homem.png" alt="homem"><br>
+                        <span class="fs-4">Masculino</span>
+                    </button>
+                    <button id="woman" class="btn px-4 py-2">
+                        <img class="mb-2" src="img/mulher.png" alt="mulher"><br>
+                        <span class="fs-4">Feminino</span>
+                    </button>
+                </div>
+
+                <div id="height__weight" class="d-flex mb-4">
+
+                    <div id="height_container">
+                        <label class="label-style" for="altura">Altura:</label><br>
+                        <div class="d-flex align-items-center me-3">
+                            <input type="text" class="ps-2 input-style" placeholder="exemplo: 160cm" id="altura">
+                            <div class="unity fw-bold py-2 px-1 ">cm</div>
+                        </div>
+                    </div>
+
+                    <div id="weight_container">
+                        <label class="label-style" for="peso">Peso:</label><br>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="ps-2 input-style" placeholder="exemplo: 60kg" id="peso">
+                            <div class="unity fw-bold py-2 px-1 ">kg</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="submit" class="btn w-100" onclick="submitData()">
+                    <span>CALCULAR</span>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="container_right text-white p-5 d-flex flex-column align-items-center justify-content-center">
+            
+            <h1 id="imcInfo" class="title"></h1>
+
+            <div id="IMC" class="d-flex flex-column align-items-center mb-4">
+                <h5>Seu Índice IMC é de:</h5>
+                <h1>-</h1>
+            </div>
+
+            <div id="idealWeight" class="d-flex flex-column align-items-center">
+                <h5>Peso ideal:</h5>
+                <h1>-</h1>
+            </div>
+
+            <div class="info_bar">
+                
+                <div class="info_numbers">
+                    <span class="me-5 fs-5">< 18,5</span>
+                    <span class="me-5 fs-5">18,5 a 24,9</span>
+                    <span class="me-5 fs-5">24,9 a 30</span>
+                    <span class="fs-5">> 30</span>
+                </div>
+
+                <div class="info_texts d-flex justify-content-between">
+                    <span class="ms-3">Magreza</span>
+                    <span>Peso ideal</span>
+                    <span class="ms-4">Sobrepeso</span>
+                    <span>Obesidade</span>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>
